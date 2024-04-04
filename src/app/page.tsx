@@ -5,9 +5,12 @@ export default function Home() {
     // <main className='flex min-h-screen flex-col items-center justify-between p-24'>
     // <main className='prose prose-xl max-w-[800px] mx-auto w-[80vw]'>
     <div>
-      <div className='fixed top-0 left-0 opacity-50 object-cover object-center'>
-        {/* <Image src='/tokyo.png' width={800} height={2000} alt='' /> */}
-        <img src='/tokyo.png' alt='' className='w-[100vw] ' />
+      <div className='fixed top-0 left-0'>
+        <img
+          src='/tokyo.png'
+          alt=''
+          className='w-[100vw] h-[100vh] object-cover object-center opacity-50'
+        />
       </div>
       {/* <Image
         src='/tokyo.png'
@@ -55,7 +58,8 @@ export default function Home() {
           <div className=' py-10'>デジフレ改革</div>
           <div className=' py-10'>
             <p>ミッションステートメント</p>
-            <ul className='text-start px-10 pt-10 list-decimal'>
+            {/* <ul className='text-start px-10 pt-10 list-decimal'> */}
+            <ul className='text-start px-10 pt-10 list-decimal max-w-[500px] mx-auto text-[14px]'>
               <li>&quot;協力せよ！共に行動に移す力は無限大だ！&quot;</li>
               <li>
                 &quot;「食わず嫌い」から解放しろ！未知に最前線で挑戦し続けよ！&quot;
