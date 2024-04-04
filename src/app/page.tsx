@@ -22,42 +22,44 @@ export default function Home() {
         }}
       />
 
-      <main className='max-w-[1500px] mx-auto w-[80vw] text-center my-10 text-xl text-white'>
+      <main className='max-w-[1500px] mx-auto w-[95vw] text-center mt-10 my-20 text-xl text-white'>
         <div className='flex flex-col gap-10'>
           <div className=' py-10 text-[13vw] sm:text-[12vw] md:text-[100px] font-bold'>
             デジフレ革命
           </div>
           <Image
             src='/digifre.png'
-            width={400}
+            width={800}
             height={800}
             alt=''
             className='mx-auto z-infinite opacity-100'
           />
           <div className=' py-10 text-[40px]'>24卒のミッション</div>
           <Image
-            src='/mission.png'
-            width={400}
+            src='/missionDetail.png'
+            width={800}
             height={800}
             alt=''
             className='mx-auto z-infinite opacity-100'
           />
-          <div className='flex justify-around items-center'>
-            <div className='flex flex-col gap-10'>
-              <div className=' py-10'>24卒の強み</div>
-              <div className=' py-10'>フレッシュさデジタルネイティブ</div>
-            </div>
-            <div className='text-[100px]'>+</div>
-            <div className='flex flex-col gap-10'>
-              <div className=' py-10'>組織から求められていること</div>
-              <div className=' py-10'>変革</div>
-            </div>
-          </div>
-          <div className=' py-10'>デジフレ改革</div>
+          <Image
+            src='/digifreArrow.png'
+            width={800}
+            height={800}
+            alt=''
+            className='mx-auto z-infinite opacity-100'
+          />
           <div className=' py-10'>
-            <p>ミッションステートメント</p>
+            <Image
+              src='/missionStatement.png'
+              width={800}
+              height={800}
+              alt=''
+              className='mx-auto z-infinite opacity-100'
+            />
+            {/* <p>ミッションステートメント</p> */}
             {/* <ul className='text-start px-10 pt-10 list-decimal'> */}
-            <ul className='text-start px-10 pt-10 list-decimal max-w-[500px] mx-auto text-[14px]'>
+            {/* <ul className='text-start px-10 pt-10 list-decimal max-w-[500px] mx-auto text-[14px]'>
               <li>&quot;協力せよ！共に行動に移す力は無限大だ！&quot;</li>
               <li>
                 &quot;「食わず嫌い」から解放しろ！未知に最前線で挑戦し続けよ！&quot;
@@ -83,9 +85,9 @@ export default function Home() {
               <li>
                 &quot;リーダーシップを発揮せよ！周りを導き、自らも成長し続けろ！
               </li>
-            </ul>
+            </ul> */}
           </div>
-          <div className=' py-10'>※一部、生成AIで作りました</div>
+          <div className=''>※一部、生成AIで作りました</div>
         </div>
       </main>
     </div>
