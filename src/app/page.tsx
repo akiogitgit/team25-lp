@@ -7,7 +7,7 @@ export default function Home() {
         style={{
           backgroundImage: `url(tokyo.png)`,
           // backgroundColor: 'rgba(255,255,255,0.7)',
-          backgroundColor: 'rgba(79, 77, 77, 0.9)',
+          backgroundColor: 'rgba(20, 20, 20, 0.9)',
           backgroundBlendMode: 'lighten',
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
@@ -19,35 +19,26 @@ export default function Home() {
           height: '100vh',
           width: '100vw',
           zIndex: -1,
+          filter: 'blur(4px)',
         }}
       />
 
+      <img src='/digifre.png' />
       <main className='max-w-[1500px] mx-auto w-[95vw] text-center mt-10 my-20 text-xl text-white'>
-        <div className='flex flex-col gap-10'>
-          <div className=' py-10 text-[13vw] sm:text-[12vw] md:text-[100px] font-bold'>
-            デジフレ革命
-          </div>
-          <Image
-            src='/digifre.png'
-            width={800}
-            height={800}
-            alt=''
-            className='mx-auto z-infinite opacity-100'
-          />
-          <div className=' py-10 text-[40px]'>24卒のミッション</div>
+        <div className='flex flex-col gap-10 justify-center items-center'>
           <Image
             src='/missionDetail.png'
             width={800}
             height={800}
             alt=''
-            className='mx-auto z-infinite opacity-100'
+            className='sm:mt-[200px]'
           />
           <Image
             src='/digifreArrow.png'
             width={800}
             height={800}
             alt=''
-            className='mx-auto z-infinite opacity-100'
+            className=''
           />
           <div className=' py-10'>
             <Image
@@ -55,7 +46,7 @@ export default function Home() {
               width={800}
               height={800}
               alt=''
-              className='mx-auto z-infinite opacity-100'
+              className=''
             />
             {/* <p>ミッションステートメント</p> */}
             {/* <ul className='text-start px-10 pt-10 list-decimal'> */}
@@ -87,7 +78,15 @@ export default function Home() {
               </li>
             </ul> */}
           </div>
-          <div className=''>※一部、生成AIで作りました</div>
+          {/* <div className=''>※一部、生成AIで作りました</div> */}
+
+          <Image
+            src='/description.png'
+            width={300}
+            height={800}
+            alt=''
+            className=''
+          />
         </div>
       </main>
     </div>
