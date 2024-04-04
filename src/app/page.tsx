@@ -2,48 +2,46 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    // <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-    // <main className='prose prose-xl max-w-[800px] mx-auto w-[80vw]'>
     <div>
-      <div className='fixed top-0 left-0'>
-        <img
-          src='/tokyo.png'
-          alt=''
-          className='w-[100vw] h-[100vh] object-cover object-center opacity-50'
-        />
-      </div>
-      {/* <Image
-        src='/tokyo.png'
-        // width={800}
-        // height={2000}
-        fill={true}
-        alt=''
-        className='fixed top-0 left-0 opacity-50 object-cover'
-      /> */}
-      <main className='max-w-[1500px] mx-auto w-[80vw] text-center my-10 text-xl'>
+      <div
+        style={{
+          backgroundImage: `url(tokyo.png)`,
+          // backgroundColor: 'rgba(255,255,255,0.7)',
+          backgroundColor: 'rgba(79, 77, 77, 0.9)',
+          backgroundBlendMode: 'lighten',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          objectFit: 'cover',
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          height: '100vh',
+          width: '100vw',
+          zIndex: -1,
+        }}
+      />
+
+      <main className='max-w-[1500px] mx-auto w-[80vw] text-center my-10 text-xl text-white'>
         <div className='flex flex-col gap-10'>
-          {/* <Image
-            src='/tokyo.png'
-            width={800}
-            height={2000}
-            alt=''
-            className='absolute opacity-50'
-          /> */}
-          <div className=' py-10 text-[200px] font-bold'>デジフレ革命</div>
-          {/* <div className=' py-10 text-[30px]'>
-            <p>だーしー・あっきー・かっぴー・さんちゃん・りんりん・いっちー</p>
-          </div> */}
-          ナポレオン
+          <div className=' py-10 text-[13vw] sm:text-[12vw] md:text-[100px] font-bold'>
+            デジフレ革命
+          </div>
           <Image
-            src='/tokyo.png'
+            src='/digifre.png'
             width={400}
             height={800}
-            // fill={true}
             alt=''
-            // className='absolute object-cover h-[200vh]'
-            className='mx-auto'
+            className='mx-auto z-infinite opacity-100'
           />
           <div className=' py-10 text-[40px]'>24卒のミッション</div>
+          <Image
+            src='/mission.png'
+            width={400}
+            height={800}
+            alt=''
+            className='mx-auto z-infinite opacity-100'
+          />
           <div className='flex justify-around items-center'>
             <div className='flex flex-col gap-10'>
               <div className=' py-10'>24卒の強み</div>
